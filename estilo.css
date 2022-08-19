@@ -22,7 +22,7 @@
 }
 
 html, body {
-    min-width: 100vh;
+    min-width: 96vw;
     background-color: beige;
     font-family: var(--fonte1);
 }
@@ -31,8 +31,8 @@ header {
     color: white;
     background-color: black;
     text-align: center;
+    padding: 2vh;
     
-    margin: auto;
     
 }
 header > h1 {
@@ -63,43 +63,59 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 30px;
+    padding-left: 5vh;
     font-family: var(--fonte3);
     
    letter-spacing: 2px;
     font-size: 3vw;
 }
-
+ section > p {
+    padding-bottom: 2em;
+ }
 section.normal {
     background-color: lightslategray;
     color: black;
+    padding-left: 40px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.300);
 }
 
 section.imagem {
-    background-color: rgb(60, 59, 59);
-    color: white;
+    background-color: rgba(11, 11, 11, 0.934);
+    color: white;    
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.700);
+    background-size: cover;
+
+    background-attachment: fixed; /* Fixando a imagem no fundo da section. Para fazer o efeito PARALLAX*/
+    padding-left: 25px;
 }
 
 section.imagem > p {
     display: inline-block;
-    background-color: rgba(222, 184, 135, 0.516);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.666);
+    padding: 20px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
 }
 
 
 
-
-
-
-
-
-
 footer {
-    color: white;
-    background-color: rgb(35, 88, 49);
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 22, 22);
     text-align: center;
     padding: 15px;
     
-    font-family: var(--fonte3);
-   
+    font-family: var(--fonte1);
+    font-size: 1.8vh;
+    
 }
