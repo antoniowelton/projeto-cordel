@@ -1,2 +1,87 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-width: 100vh;
+    background-color: beige;
+}
+
+header {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+header a, footer a { /* Juntando as CSS dos link do cabeçalho e do rodapé */
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover { /* Juntando as CSS do HOVER do cabeçalho e do rodapé */
+    color: steelblue;
+    text-decoration: underline;    
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: lightslategray;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(60, 59, 59);
+    color: white;
+}
+section.imagem > p {
+    width: 350px;
+    background-color: rgba(222, 184, 135, 0.516);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    color: white;
+    background-color: rgb(35, 88, 49);
+    text-align: center;
+    padding: 30px;
+
+}
