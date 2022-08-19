@@ -1,27 +1,51 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@font-face {
+    font-family: 'small_memory';
+    src: url(fontes/small_memory/SmallMemory.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursiva;
+    --fonte3: 'small_memory';
+}
+
 * {
     margin: 0px;
     padding: 0px;
+   
 }
 
 html, body {
     min-width: 100vh;
     background-color: beige;
+    font-family: var(--fonte1);
 }
 
 header {
     color: white;
     background-color: black;
     text-align: center;
+    
+    margin: auto;
+    
 }
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    
+    
 }
-header > p {
-    padding-top: 10px;
+header > p {    
     padding-bottom: 50px;
+    
 }
 
 header a, footer a { /* Juntando as CSS dos link do cabeçalho e do rodapé */
@@ -31,7 +55,8 @@ header a, footer a { /* Juntando as CSS dos link do cabeçalho e do rodapé */
 }
 header a:hover, footer a:hover { /* Juntando as CSS do HOVER do cabeçalho e do rodapé */
     color: steelblue;
-    text-decoration: underline;    
+    text-decoration: underline; 
+    transition: 0.3s;   
 }
 
 section {
@@ -39,6 +64,10 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    
+   letter-spacing: 2px;
+    font-size: 3vw;
 }
 
 section.normal {
@@ -50,25 +79,12 @@ section.imagem {
     background-color: rgb(60, 59, 59);
     color: white;
 }
+
 section.imagem > p {
-    width: 350px;
+    display: inline-block;
     background-color: rgba(222, 184, 135, 0.516);
+    padding: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -82,6 +98,8 @@ footer {
     color: white;
     background-color: rgb(35, 88, 49);
     text-align: center;
-    padding: 30px;
-
+    padding: 15px;
+    
+    font-family: var(--fonte3);
+   
 }
